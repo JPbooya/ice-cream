@@ -9,44 +9,56 @@
 </head>
 <body>
     <main>
-        <h1>Ice Cream Order Form</h1>
-
+       <h1>Ice Cream Order Form</h1>
         <form id="icecream-form" action="#" method="get">
             <fieldset>
                 <legend>Personal Information</legend>
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name">
-                <hr>
-                <label for="email">Email</label>
+                <label for="email">Email:</label>
                 <input type="text" id="email" name="email">
             </fieldset>
 
             <fieldset>
                 <legend>Order Details</legend>
-                <label for="flavor">Choose Your Flavor</label>
-                <select id="flavor" name="Flavor">
+                <small>Choose your flavor</small>
+                <select id="flavor" name="flavor">
                     <option value="vanilla">Vanilla</option>
                     <option value="chocolate">Chocolate</option>
                     <option value="mint">Mint</option>
                 </select> 
 
-                <label>Choose Your Cone</label>
-                <input type="radio" id="waffle-cone" value="waffle" name="cone">Waffle Cone
-                <input type="radio" id="sugar-cone" value="sugar" name="cone">Sugar Cone
-                <input type="radio" id="cup" value="cup" name="cone">Cup
-
-                <label>Toppings</label>
-                <input type="checkbox" id="sprinkle" value="sprinkle" name="toppings[]">Springkles
-                <input type="checkbox" id="nuts" value="nuts" name="toppings[]">Nuts
-                <input type="checkbox" id="cherry" value="cherry" name="toppings[]">Cherry
-                <input type="checkbox" id="whipped-cream" value="whipped-cream[]">Whipped Cream
+                <small>Choose your cone:</small>
+                <label for="waffle">
+                    <input type="radio" id="waffle" value="waffle" name="cone">Waffle Cone
+                </label>
+                <label for="sugar">
+                    <input type="radio" id="sugar" value="sugar" name="cone">Sugar Cone
+                </label>
+                <label for="cup">
+                    <input type="radio" id="cup" value="cup" name="cone">Cup
+                </label>
+                <small>Toppings:</small>
+                <label for="sprinkles">
+                    <input type="checkbox" id="sprinkles" value="sprinkles" name="toppings[]">Sprinkles
+                </label>
+                <label for="nuts">
+                    <input type="checkbox" id="nuts" value="nuts" name="toppings[]">Nuts
+                </label>
+                <label for="cherry">
+                    <input type="checkbox" id="cherry" value="cherry" name="toppings[]">Cherry
+                </label>
+                <label for="whipped-cream">
+                    <input type="checkbox" id="whipped-cream" value="whipping-cream" name="toppings[]">Whipped Cream
+                </label>
+                <hr>
                 <label for="comments">Additional Comments</label>
                 <textarea rows="5" id="comments" name="comments"></textarea>
             </fieldset>
 
-            <button type="submit" id="order-button">Submit Order</button>
+           <button type="submit" id="order-button">Submit Order</button>
         </form>
+        <img src="image/ice-cream-image.jpg" alt="yummy ice cream">
     </main>
-    <img src="image/ice-cream-image.jpg" alt="ice-cream">
 </body>
 </html>
